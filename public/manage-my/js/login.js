@@ -62,6 +62,10 @@ $(function () {
     }).on('success.form.bv', function (e) {
         e.preventDefault();
         //使用ajax提交逻辑
+        // 增加进度条开启代码
+        //开启进度条
+        NProgress.start();
+        // ajax提交数据
         $.ajax({
             url: "/employee/employeeLogin",
             data: $('form').serialize(),
@@ -80,7 +84,10 @@ $(function () {
                         validator.updateStatus('password', 'INVALID', '	callback')
                     }
                 }
-
+                setTimeout(function(){
+                    //关闭进度条
+                    NProgress.done();
+                }, 2000);
             }
         })
     });
@@ -90,4 +97,5 @@ $(function () {
         //使用表单校验实例可以调用一些常用的方法。
         validator.resetForm();
     })
+    
 })
