@@ -1,0 +1,71 @@
+html,body{
+    height: 100%;
+}
+.lt_slide{
+    height: 100%;
+    width: 180px;
+    background-color: #222d32;
+    position:absolute;
+    left: 0;
+    right: 0;
+}
+.lt_slide .header{
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+   background-color: skyblue;
+}
+.lt_slide .header a{
+    color: white;
+    font-size: 18px;
+}
+.lt_slide .user{
+    padding: 30px 20px;
+}
+.lt_slide .user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.lt_slide .user span{
+    font-size: 13px;
+    color: white;
+}
+.lt_slide .content li{
+    border: 4px solid transparent;
+}
+.lt_slide .content li.active{
+    border-left-color: yellowgreen;
+    background-color: black;
+}
+.lt_slide .content li a{
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 30px;
+    color: gray;
+}
+.lt_slide .content li ol a{
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 40px;
+    color: gray;
+}
+/* 主体样式 */
+.lt_main{
+    /* background-color: pink; */
+    height: 100%;
+    padding-left: 180px;
+}
+.lt_main .header{
+    height: 50px;
+    background-color: skyblue;
+    padding: 0 20px;
+}
+.lt_main .header a{
+    line-height: 50px;
+    color: white;
+    font-size: 18px;
+}
+.lt_main .content {
+    padding: 30px 20px;
+}

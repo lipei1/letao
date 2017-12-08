@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- 到入bootstrap的css -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 导入样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 引入自己的scc -->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <h2>你值得拥有更好的</h2>
+    <!-- 边栏 -->
+    <div class="lt_slide">
+        <div class="header">
+            <a href="./index.html">HEIMA</a>
+        </div>
+        <div class="user">
+            <img src="./images/default.png" alt="" srcset="">
+            <span>超级管理员</span>
+        </div>
+        <div class="content">
+            <ul>
+                <li class="active">
+                    <a href="javascript:;">
+                        <span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="glyphicon glyphicon-list"></span>&nbsp;用户管理</a>
+                    <ol>
+                        <li>
+                            <a href="javascript:;">一级分类</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">二级分类</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="productManage.html">
+                        <span class="glyphicon glyphicon-tags"></span>&nbsp;用户管理</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="lt_main">
+        <div class="header">
+            <a class="glyphicon glyphicon-qrcode pull-left" href="javascript:;"></a>
+            <a class="glyphicon glyphicon-log-out pull-right" href="javascript:;"></a>
+        </div>
+        <div class="content">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#">管理系统</a>
+                </li>
+                <li>
+                    <a href="#">用户管理</a>
+                </li>
+            </ol>
+            <!-- 图表 -->
+            <div id="main-left" class='pull-left' style="width: 600px;height:400px;"></div>
+            <div id="main-right" class='pull-right' style="width: 500px;height:400px;right:0;"></div>
+        </div>
+    </div>
+
 </body>
+
 </html>
+<!-- 导入jq -->
+<script src="./lib/jquery/jquery.js"></script>
+<!-- 导入bs的js -->
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<!-- 导入echarts的js -->
+<script src="./lib/echarts/echarts.min.js"></script>
+<!-- 引入自己的js -->
+<script src="./js/index.js"></script>
